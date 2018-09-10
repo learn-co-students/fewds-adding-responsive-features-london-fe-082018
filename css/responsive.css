@@ -1,5 +1,5 @@
 /* for smaller screens at 1100px */
-@media only screen and (min-width: 1108px) {
+@media (max-width: 1108px) {
   .wrapper {
     width: 90%;
   }
@@ -13,7 +13,7 @@
 }
 
 /* for tablets at 900px */
-@media only screen and (min-width: 900px) {
+@media (max-width: 900px) {
   body {
    font-size: 85%;
   }
@@ -28,7 +28,7 @@
     position: absolute;
     top: 72px;
   }
-  #col-3 p {
+  .col-3 p {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
@@ -36,16 +36,16 @@
 }
 
 /* for screen at 750px */
-@media only screen and (min-width: 900px) {
+@media (max-width: 750px) {
   #navbar nav a {
     font-size: 0.9em;
   }
-  #col-3 p {
+  .col-3 p {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
   }
-  .col-1 .col-2 .col-3 {
+  .col-1, .col-2, .col-3 {
     width: 100%;
     margin-left: 0;
     float: none;
@@ -57,4 +57,11 @@
     height: auto;
   }
 }
-  
+
+/* for bonus screen at 700px */
+@media only screen and (max-width: 700px) {
+ #navbar {
+   display: none;
+ }
+ 
+}
